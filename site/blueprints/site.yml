@@ -8,3 +8,13 @@ tabs:
     sections:
       pages: true
   seotab: seo
+  menus:
+    icon: menu
+    fields:
+      primarynav:
+        extends: fields/singlemenu
+        label: Primary navigation
+      footernav:
+        extends: fields/multiplemenu
+        label: Footer navigations
+        max: 4

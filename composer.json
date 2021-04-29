@@ -23,7 +23,8 @@
         "michnhokn/kirby3-cookie-banner": "^1.0",
         "diesdasdigital/kirby-meta-knight": "^1.1",
         "omz13/kirby3-xmlsitemap": "^1.2",
-        "beebmx/kirby-env": "^2.0"
+        "beebmx/kirby-env": "^2.0",
+        "oblik/kirby-link-field": "^3.0"
     },
     "scripts": {
         "start": [

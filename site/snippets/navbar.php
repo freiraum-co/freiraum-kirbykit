@@ -1,3 +1,1 @@
-<nav>
-
-</nav>
+<?= $site->menu("primarynav") ?>

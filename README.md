@@ -22,6 +22,9 @@ KIRBY_PANEL_INSTALL=true
 - **[Meta Knight SEO](https://github.com/diesdasdigital/kirby-meta-knight)** – Makes it easy to work with meta information for SEO and Social Media.
 - **[Cookie Banner](https://github.com/michnhokn/kirby3-cookie-banner)** – Cookie Consent Modal.
 - **[XML-Sitemap](https://github.com/omz13/kirby3-xmlsitemap)** – Automatically generates an xml-based sitemap.
+- **[Link-Field](https://github.com/OblikStudio/kirby-link-field)** – Field for links of any kind - external, page, file, email, phone.
+- **[Menu](https://github.com/bvdputte/kirby-menu)** – Menu Builder.
+
 
 
 ---
