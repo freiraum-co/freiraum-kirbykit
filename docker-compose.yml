@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: docker/php.dockerfile
+    volumes:
+      - sock:/sock
+      - ./:/app
+    networks:
+      - php-net
+
+  nginx:
+    build:
+      context: ./
+      dockerfile: docker/nginx.dockerfile
+    ports:
+      - 9009:80
+    volumes:
+      - sock:/sock
+      - ./:/app
+    depends_on:
+      - php
+    networks:
+      - php-net
+
+
+volumes:
+  sock:
+    driver: local
+
+networks:
+  php-net:
+    driver: bridge

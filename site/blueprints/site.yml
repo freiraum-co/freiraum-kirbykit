@@ -1,0 +1,10 @@
+title: Site
+unlisted: true
+
+tabs:
+  main:
+    label: Content
+    icon: page
+    sections:
+      pages: true
+  seotab: seo

@@ -1,0 +1,15 @@
+title: Default Page
+
+tabs:
+  main:
+    label: Content
+    icon: page
+    preset: page
+    fields:
+      text:
+        label: Text
+        type: textarea
+        size: large
+
+  seotab: seo
+
