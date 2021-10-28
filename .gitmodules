@@ -1,3 +1,0 @@
-[submodule "site/plugins/kirby-menu"]
-	path = site/plugins/kirby-menu
-	url = https://github.com/bvdputte/kirby-menu.git
