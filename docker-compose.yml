@@ -5,6 +5,7 @@ services:
     build:
       context: ./
       dockerfile: docker/php.dockerfile
+    working_dir: /app
     volumes:
       - sock:/sock
       - ./:/app
