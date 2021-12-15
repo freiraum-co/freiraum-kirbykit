@@ -5,15 +5,16 @@ The freiraum Kirbykit is a basic Kirby setup with a configuration and plugins we
 
 ### Try Kirby for free  
 You can try Kirby and this kit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
+[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
 
 ### Get going
-1. `composer install`
-2. `docker-compose up`
+1. `docker-compose up`
+2. `docker-compose run php ash`
+3. `composer install`
 
-For development purposes create a `.env` file in the root folder with the following content
+For development purposes create a `.env` file in the root folder with the following content. Don't forget to create the `.env`on your production server as well.
 ```
 DEV=true
-KIRBY_DEBUG=true
 KIRBY_PANEL_INSTALL=true
 ```
 
@@ -25,9 +26,6 @@ KIRBY_PANEL_INSTALL=true
 - **[Link-Field](https://github.com/OblikStudio/kirby-link-field)** – Field for links of any kind - external, page, file, email, phone.
 - **[Menu](https://github.com/bvdputte/kirby-menu)** – Menu Builder.
 
-
-
 ---
 
 © 2021 **[freiraum.co](https://www.freiraum.co)**  
-[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
