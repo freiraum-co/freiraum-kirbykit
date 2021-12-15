@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Copy Cookie Banner assets into media folder
+      run: |
+        mkdir -p public/media/plugins/michnhokn/cookie-banner
+        cp site/plugins/kirby3-cookie-banner/assets/* public/media/plugins/michnhokn/cookie-banner/
+
+    - uses: php-actions/composer@v6
+      with:
+        command: install
+        php_version: "8.0"
+        php_extensions: gd
+
+    - uses: easingthemes/ssh-deploy@v2
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        REMOTE_HOST: # IP-Adress of Remote Server
+        REMOTE_USER: # SSH-USER
+        SOURCE: "./"
+        TARGET: # Target folder on Remote Server, Mittwald: /home/www/pUSER/html/PROJECT-FOLDER/
